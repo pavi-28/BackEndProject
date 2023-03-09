@@ -7,6 +7,12 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+/* It is a blueprint. Here we use public getter and setter methods for private attributes.
+ * In this class we use @Entity and @Table. 
+ * @Entity is used so that the class name will be table name in db.
+ * For avoid to write query, we go for hibernate
+ * @Dynamic update annotation is used for update values instead of checking all values in that record.  
+ * It will check only which value will be updated*/
 @Entity
 @Table(name = "Students")
 @DynamicUpdate
